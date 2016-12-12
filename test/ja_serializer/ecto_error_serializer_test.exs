@@ -8,8 +8,7 @@ defmodule JaSerializer.EctoErrorSerializerTest do
       "errors" => [
         %{
           source: %{pointer: "/data/attributes/title"},
-          title: "is invalid",
-          detail: "Title is invalid"
+          detail: "is invalid"
         }
       ],
       "jsonapi" => %{"version" => "1.0"}
@@ -25,8 +24,7 @@ defmodule JaSerializer.EctoErrorSerializerTest do
       "errors" => [
         %{
           source: %{pointer: "/data/attributes/monies"},
-          title: "must be more than 10",
-          detail: "Monies must be more than 10"
+          detail: "must be more than 10"
         }
       ],
       "jsonapi" => %{"version" => "1.0"}
@@ -47,13 +45,11 @@ defmodule JaSerializer.EctoErrorSerializerTest do
       "errors" => [
         %{
           source: %{pointer: "/data/attributes/title"},
-          title: "shouldn't be blank",
-          detail: "Title shouldn't be blank"
+          detail: "shouldn't be blank"
         },
         %{
           source: %{pointer: "/data/attributes/title"},
-          title: "is invalid",
-          detail: "Title is invalid"
+          detail: "is invalid"
         }
       ],
       "jsonapi" => %{"version" => "1.0"}
@@ -73,8 +69,7 @@ defmodule JaSerializer.EctoErrorSerializerTest do
           id: "1",
           status: "422",
           code: "1000",
-          title: "is invalid",
-          detail: "Title is invalid",
+          detail: "is invalid",
           source: %{pointer: "/data/attributes/title"},
           links: %{self: "http://localhost"},
           meta: %{author: "Johnny"}
@@ -94,8 +89,7 @@ defmodule JaSerializer.EctoErrorSerializerTest do
       "errors" => [
         %{
           source: %{pointer: "/data/attributes/title"},
-          title: "is invalid",
-          detail: "Title is invalid"
+          detail: "is invalid"
         }
       ],
       "jsonapi" => %{"version" => "1.0"}

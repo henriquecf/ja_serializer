@@ -50,16 +50,14 @@ defmodule JaSerializer.EctoErrorSerializer do
 
     %{
       source: %{pointer: pointer_for(field)},
-      title: title,
-      detail: "#{Utils.humanize(field)} #{title}"
+      detail: title
     } |> merge_opts(opts)
   end
 
   defp format_each({field, message}, opts) do
     %{
       source: %{pointer: pointer_for(field)},
-      title: message,
-      detail: "#{Utils.humanize(field)} #{message}"
+      detail: message
     } |> merge_opts(opts)
   end
 

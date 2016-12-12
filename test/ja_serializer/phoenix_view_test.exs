@@ -94,7 +94,7 @@ defmodule JaSerializer.PhoenixViewTest do
     assert Dict.has_key?(json, "errors")
     assert [e1] = json["errors"]
     assert e1.source.pointer == "/data/attributes/title"
-    assert e1.detail == "Title is invalid"
+    assert e1.detail == "is invalid"
   end
 
   # This should be deprecated in the future
